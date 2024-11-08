@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "staging transaction fact"
+    columns:
+      - name: transaction_id
+        data_tests:
+          - unique
+          - not_null
+      - name: warehouse_id
+      - name: transaction_date
+      - name: transaction_timestamp
+        data_tests:
+          - not_null
+      - name: transaction_hour
+      - name: order_type
+      - name: order_type_category
+      - name: order_channel
+      - name: user_id
+        data_tests:
+          - not_null
+      - name: action_code
+      - name: article
+        data_tests:
+          - not_null
+      - name: quantity
+        data_tests:
+          - not_null
+      - name: order_number
+        data_tests:
+          - not_null
+      - name: order_line_item
+      - name: order_category
+      - name: ship_line_id
+      - name: gift_flag
+      - name: order_line_item
+      - name: inventory_detail_number
+     

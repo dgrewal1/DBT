@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: pkg
+    database: aritzia-440802
+    schema: pkg
+    tables:
+      - name: articles
+      - name: transactions
+      - name: packing_time_standards

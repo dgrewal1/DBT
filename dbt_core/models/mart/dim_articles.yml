@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_articles
+    description: "Master list of articles, joined with packing time standards to get packing times and combined with stg_transactions to
+                  get full list of articles."
+    columns:
+      - name: article_id
+        description: "Surrogate Key."
+      - name: material_id
+        description: "Unique identifier for each article."
+        data_tests:
+          - unique
+          - not_null
+      - name: article_department
+      - name: estimated_packing_time
+      - name: updated_at
+      - name: created_at
+      - name: updated_by
+      - name: created_by

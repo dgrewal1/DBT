@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "List of workers and their details"
+    columns:
+      - name: user_id
+        data_tests:
+          - unique
+          - not_null
+      - name: updated_at
+      - name: created_at
+      - name: updated_by
+      - name: created_by

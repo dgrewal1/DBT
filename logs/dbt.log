@@ -1,0 +1,24 @@
+[0m19:14:22.202399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051c2770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b83af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b83670>]}
+
+
+============================== 19:14:22.205707 | 14870955-7935-498d-bb34-8547de9cebe5 ==============================
+[0m19:14:22.205707 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:14:22.206114 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/richie/Documents/DBT/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/richie/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -s fact_user_packing_efficiency.sql', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:14:23.035904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14870955-7935-498d-bb34-8547de9cebe5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b962410>]}
+[0m19:14:23.110477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14870955-7935-498d-bb34-8547de9cebe5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b096f50>]}
+[0m19:14:23.111015 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:14:23.127326 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:14:23.128149 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:14:23.128441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '14870955-7935-498d-bb34-8547de9cebe5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b8f50f0>]}
+[0m19:14:23.723764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14870955-7935-498d-bb34-8547de9cebe5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bb37310>]}
+[0m19:14:23.765932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14870955-7935-498d-bb34-8547de9cebe5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcf27d0>]}
+[0m19:14:23.766279 [info ] [MainThread]: Found 479 macros
+[0m19:14:23.766508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14870955-7935-498d-bb34-8547de9cebe5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcf1e40>]}
+[0m19:14:23.766854 [warn ] [MainThread]: The selection criterion 'fact_user_packing_efficiency.sql' does not match any enabled nodes
+[0m19:14:23.767474 [info ] [MainThread]: 
+[0m19:14:23.767683 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:14:23.767971 [debug] [MainThread]: Command end result
+[0m19:14:23.788132 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.6308949, "process_user_time": 2.291957, "process_kernel_time": 2.378965, "process_mem_max_rss": "189284352", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:14:23.788596 [debug] [MainThread]: Command `dbt run` succeeded at 19:14:23.788535 after 1.63 seconds
+[0m19:14:23.788857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051c2770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bb0d030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b962410>]}
+[0m19:14:23.789096 [debug] [MainThread]: Flushing usage events
