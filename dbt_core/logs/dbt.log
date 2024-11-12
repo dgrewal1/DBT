@@ -1,0 +1,919 @@
+[0m21:09:11.299214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037115a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10455b940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10455b4f0>]}
+
+
+============================== 21:09:11.302546 | 0f23dc21-9c99-4185-bb4e-ac57b71fbbaf ==============================
+[0m21:09:11.302546 [info ] [MainThread]: Running with dbt=1.9.0-b4
+[0m21:09:11.302944 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/richie/Documents/DBT/dbt_core/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/richie/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:09:12.045444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1027e1cc0>]}
+[0m21:09:12.080673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f0a710>]}
+[0m21:09:12.081147 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m21:09:12.096852 [debug] [MainThread]: checksum: 0d3acddb5afbce98f9888b13248063cae3d09e6e329263e3ffe4b2a6aa072c8d, vars: {}, profile: , target: , version: 1.9.0b4
+[0m21:09:12.097508 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:09:12.097775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7da6e0>]}
+[0m21:09:13.172014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac8c490>]}
+[0m21:09:13.248582 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/richie/Documents/DBT/dbt_core/target/manifest.json
+[0m21:09:13.250887 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/richie/Documents/DBT/dbt_core/target/semantic_manifest.json
+[0m21:09:13.264511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac7fcd0>]}
+[0m21:09:13.264885 [info ] [MainThread]: Found 17 models, 1 seed, 11 data tests, 3 sources, 484 macros
+[0m21:09:13.265117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac7f2b0>]}
+[0m21:09:13.266554 [info ] [MainThread]: 
+[0m21:09:13.266782 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:09:13.266960 [info ] [MainThread]: 
+[0m21:09:13.267266 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:09:13.270660 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aritzia-440802'
+[0m21:09:13.270888 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:09:13.643465 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aritzia-440802, now list_aritzia-440802_pkg_mart)
+[0m21:09:13.644189 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:09:13.881654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10284c8e0>]}
+[0m21:09:13.887096 [debug] [Thread-1 (]: Began running node model.aritzia.dim_date
+[0m21:09:13.887807 [info ] [Thread-1 (]: 1 of 17 START sql table model pkg_mart.dim_date ................................ [RUN]
+[0m21:09:13.888407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aritzia-440802_pkg_mart, now model.aritzia.dim_date)
+[0m21:09:13.888828 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_date
+[0m21:09:13.898968 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_date"
+[0m21:09:13.900114 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_date
+[0m21:09:13.912541 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:14.205948 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_date"
+[0m21:09:14.207300 [debug] [Thread-1 (]: On model.aritzia.dim_date: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_date"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_date`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+SELECT
+  FORMAT_DATE('%F', d) as date_id,
+  d AS full_date,
+  EXTRACT(YEAR FROM d) AS year,
+  EXTRACT(WEEK FROM d) AS year_week,
+  EXTRACT(DAY FROM d) AS year_day,
+  EXTRACT(YEAR FROM d) AS fiscal_year,
+  FORMAT_DATE('%Q', d) as fiscal_qtr,
+  EXTRACT(MONTH FROM d) AS month,
+  FORMAT_DATE('%B', d) as month_name,
+  FORMAT_DATE('%w', d) AS week_day,
+  FORMAT_DATE('%A', d) AS day_name,
+  (CASE WHEN FORMAT_DATE('%A', d) IN ('Sunday', 'Saturday') THEN 0 ELSE 1 END) AS day_is_weekday,
+FROM (
+  SELECT
+    *
+  FROM
+    UNNEST(GENERATE_DATE_ARRAY('2021-01-01', '2021-12-31', INTERVAL 1 DAY)) AS d )
+ORDER BY 1
+    );
+  
+[0m21:09:14.620402 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:2aea34dc-d38c-4237-8d10-6d7a0e4c9abc&page=queryresults
+[0m21:09:16.894718 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac7e380>]}
+[0m21:09:16.895528 [info ] [Thread-1 (]: 1 of 17 OK created sql table model pkg_mart.dim_date ........................... [[32mCREATE TABLE (365.0 rows, 0 processed)[0m in 3.00s]
+[0m21:09:16.896093 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_date
+[0m21:09:16.896471 [debug] [Thread-1 (]: Began running node model.aritzia.stg_articles
+[0m21:09:16.897015 [info ] [Thread-1 (]: 2 of 17 START sql view model pkg_mart.stg_articles ............................. [RUN]
+[0m21:09:16.897500 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_date, now model.aritzia.stg_articles)
+[0m21:09:16.897799 [debug] [Thread-1 (]: Began compiling node model.aritzia.stg_articles
+[0m21:09:16.902971 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.stg_articles"
+[0m21:09:16.903815 [debug] [Thread-1 (]: Began executing node model.aritzia.stg_articles
+[0m21:09:16.918393 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.stg_articles"
+[0m21:09:16.919350 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:16.919702 [debug] [Thread-1 (]: On model.aritzia.stg_articles: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.stg_articles"} */
+
+
+  create or replace view `aritzia-440802`.`pkg_mart`.`stg_articles`
+  OPTIONS()
+  as 
+
+with
+    staging as (
+        select
+            ABS(FARM_FINGERPRINT(CONCAT(CAST(material as STRING),CAST(department as STRING)))) as article_id
+            ,material
+            ,department
+            ,CURRENT_DATE as updated_at
+            ,CURRENT_DATE as created_at
+            ,SESSION_USER() as updated_by
+            ,SESSION_USER() as created_by
+        from `aritzia-440802`.`pkg`.`articles`
+    )
+
+select *
+from staging;
+
+
+[0m21:09:17.388789 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:32d197ec-8f68-4724-be1b-acdfcfbef0ff&page=queryresults
+[0m21:09:17.649874 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103564af0>]}
+[0m21:09:17.652025 [info ] [Thread-1 (]: 2 of 17 OK created sql view model pkg_mart.stg_articles ........................ [[32mCREATE VIEW (0 processed)[0m in 0.75s]
+[0m21:09:17.652938 [debug] [Thread-1 (]: Finished running node model.aritzia.stg_articles
+[0m21:09:17.653769 [debug] [Thread-1 (]: Began running node model.aritzia.stg_packing_time_standards
+[0m21:09:17.654924 [info ] [Thread-1 (]: 3 of 17 START sql view model pkg_mart.stg_packing_time_standards ............... [RUN]
+[0m21:09:17.655766 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.stg_articles, now model.aritzia.stg_packing_time_standards)
+[0m21:09:17.656333 [debug] [Thread-1 (]: Began compiling node model.aritzia.stg_packing_time_standards
+[0m21:09:17.661880 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.stg_packing_time_standards"
+[0m21:09:17.662998 [debug] [Thread-1 (]: Began executing node model.aritzia.stg_packing_time_standards
+[0m21:09:17.666815 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.stg_packing_time_standards"
+[0m21:09:17.667688 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:17.668253 [debug] [Thread-1 (]: On model.aritzia.stg_packing_time_standards: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.stg_packing_time_standards"} */
+
+
+  create or replace view `aritzia-440802`.`pkg_mart`.`stg_packing_time_standards`
+  OPTIONS()
+  as with packing_time_standards as (
+    select BASICMOVE_STANDARD,BASICPROC_STANDARD,BASICSCAN_STANDARD,BASICWRAP_STANDARD, BASICPACK_STANDARD,BELT_STANDARD,BLOUSE_STANDARD
+                        ,COAT_STANDARD,DRESS_STANDARD,FOOTWEAR_STANDARD,HEADWEAR_STANDARD,HOSIERY_STANDARD,JACKET_STANDARD,NECKWEAR_STANDARD,PANT_STANDARD
+                        ,SKIRT_STANDARD,SWEATER_STANDARD,TSHIRT_STANDARD,UNDERWEAR_STANDARD,BAG_STANDARD,GIFTITEM_STANDARD,HANDWEAR_STANDARD,SMALLGOOD_STANDARD
+                        ,JEWELRY_STANDARD,SWIMWEAR_STANDARD/1.0 as SWIMWEAR_STANDARD 
+     from `aritzia-440802`.`pkg_mart`.`packing_time_standards`
+    )
+
+ SELECT item
+ ,CASE WHEN CONCAT(UPPER(SUBSTR(SPLIT(item, '_')[SAFE_OFFSET(0)], 1, 1)), LOWER(SUBSTR(SPLIT(item, '_')[SAFE_OFFSET(0)], 2))) LIKE '%Tshirt%' THEN 'T-shirt'
+      ELSE CONCAT(UPPER(SUBSTR(SPLIT(item, '_')[SAFE_OFFSET(0)], 1, 1)), LOWER(SUBSTR(SPLIT(item, '_')[SAFE_OFFSET(0)], 2)))
+  END 
+    AS  derived_department
+        ,packing_time
+        ,CURRENT_DATE as updated_at
+        ,CURRENT_DATE as created_at
+        ,SESSION_USER() as updated_by
+        ,SESSION_USER() as created_by
+ FROM packing_time_standards 
+UNPIVOT(packing_time FOR item IN (BASICMOVE_STANDARD,BASICPROC_STANDARD,BASICSCAN_STANDARD,BASICWRAP_STANDARD, BASICPACK_STANDARD,BELT_STANDARD,BLOUSE_STANDARD
+                        ,COAT_STANDARD,DRESS_STANDARD,FOOTWEAR_STANDARD,HEADWEAR_STANDARD,HOSIERY_STANDARD,JACKET_STANDARD,NECKWEAR_STANDARD,PANT_STANDARD
+                        ,SKIRT_STANDARD,SWEATER_STANDARD,TSHIRT_STANDARD,UNDERWEAR_STANDARD,BAG_STANDARD,GIFTITEM_STANDARD,HANDWEAR_STANDARD,SMALLGOOD_STANDARD
+                        ,JEWELRY_STANDARD,SWIMWEAR_STANDARD));
+
+
+[0m21:09:18.209321 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:36d3cb2e-c592-4766-ae44-41c978510066&page=queryresults
+[0m21:09:18.463162 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa4f7c0>]}
+[0m21:09:18.463886 [info ] [Thread-1 (]: 3 of 17 OK created sql view model pkg_mart.stg_packing_time_standards .......... [[32mCREATE VIEW (0 processed)[0m in 0.81s]
+[0m21:09:18.464483 [debug] [Thread-1 (]: Finished running node model.aritzia.stg_packing_time_standards
+[0m21:09:18.464894 [debug] [Thread-1 (]: Began running node model.aritzia.stg_transactions
+[0m21:09:18.465439 [info ] [Thread-1 (]: 4 of 17 START sql table model pkg_mart.stg_transactions ........................ [RUN]
+[0m21:09:18.465949 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.stg_packing_time_standards, now model.aritzia.stg_transactions)
+[0m21:09:18.466309 [debug] [Thread-1 (]: Began compiling node model.aritzia.stg_transactions
+[0m21:09:18.469991 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.stg_transactions"
+[0m21:09:18.470744 [debug] [Thread-1 (]: Began executing node model.aritzia.stg_transactions
+[0m21:09:18.474611 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:18.818801 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.stg_transactions"
+[0m21:09:18.820317 [debug] [Thread-1 (]: On model.aritzia.stg_transactions: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.stg_transactions"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`stg_transactions`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with
+    transactions as (
+        SELECT 
+            transaction_id
+            ,warehouse_id
+            ,transaction_timestamp
+            ,CAST(date as DATE) as transaction_date
+            ,hour as transaction_hour
+            ,order_type
+            ,order_type_category
+            ,order_channel
+            ,user_id
+            ,action_code
+            ,CASE WHEN article !='?' THEN CAST(article AS INT) ELSE 1 END as article
+            ,SAFE_CAST(quantity as INT) as quantity
+            ,order_number
+            ,order_line_item
+            ,order_category
+            ,ship_line_id
+            ,gift_flag
+            ,from_area_code
+            ,to_area_code
+            ,from_storage_location
+            ,to_storage_location
+            ,inventory_detail_number
+            ,CURRENT_DATE as updated_at
+            ,CURRENT_DATE as created_at
+            ,SESSION_USER() as updated_by
+            ,SESSION_USER() as created_by
+            --,ps.packing_time as estimated_packing_time,
+        from `aritzia-440802`.`pkg`.`transactions`
+    )
+
+SELECT *
+from transactions
+    );
+  
+[0m21:09:19.229779 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:bdf6e6d1-3e55-49ce-8652-4f48467a7d44&page=queryresults
+[0m21:09:21.417816 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103564af0>]}
+[0m21:09:21.419030 [info ] [Thread-1 (]: 4 of 17 OK created sql table model pkg_mart.stg_transactions ................... [[32mCREATE TABLE (3.7k rows, 696.2 KiB processed)[0m in 2.95s]
+[0m21:09:21.419803 [debug] [Thread-1 (]: Finished running node model.aritzia.stg_transactions
+[0m21:09:21.421328 [debug] [Thread-1 (]: Began running node model.aritzia.dim_action_code
+[0m21:09:21.421991 [info ] [Thread-1 (]: 5 of 17 START sql table model pkg_mart.dim_action_code ......................... [RUN]
+[0m21:09:21.422558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.stg_transactions, now model.aritzia.dim_action_code)
+[0m21:09:21.422989 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_action_code
+[0m21:09:21.427638 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_action_code"
+[0m21:09:21.428672 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_action_code
+[0m21:09:21.431677 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:21.628017 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_action_code"
+[0m21:09:21.630154 [debug] [Thread-1 (]: On model.aritzia.dim_action_code: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_action_code"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_action_code`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT 
+     action_code_id
+    ,action_code
+    ,CURRENT_DATE as updated_at
+    ,CURRENT_DATE as created_at
+    ,SESSION_USER() as updated_by
+    ,SESSION_USER() as created_by
+FROM (
+
+    SELECT DISTINCT
+    CAST(ABS(FARM_FINGERPRINT(CAST(action_code as STRING))) AS INT) as action_code_id
+    ,action_code
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+ 
+ UNION ALL 
+    SELECT -1
+       , 'UNKWOWN'
+    )
+order by 1
+    );
+  
+[0m21:09:22.095314 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:ecd7b742-ab34-47b4-a284-40b16435cdac&page=queryresults
+[0m21:09:24.667371 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a94af50>]}
+[0m21:09:24.668798 [info ] [Thread-1 (]: 5 of 17 OK created sql table model pkg_mart.dim_action_code .................... [[32mCREATE TABLE (7.0 rows, 36.0 KiB processed)[0m in 3.24s]
+[0m21:09:24.669801 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_action_code
+[0m21:09:24.670378 [debug] [Thread-1 (]: Began running node model.aritzia.dim_area
+[0m21:09:24.670972 [info ] [Thread-1 (]: 6 of 17 START sql table model pkg_mart.dim_area ................................ [RUN]
+[0m21:09:24.671653 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_action_code, now model.aritzia.dim_area)
+[0m21:09:24.672118 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_area
+[0m21:09:24.677156 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_area"
+[0m21:09:24.678332 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_area
+[0m21:09:24.681293 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:24.967943 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_area"
+[0m21:09:24.970528 [debug] [Thread-1 (]: On model.aritzia.dim_area: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_area"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_area`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT DISTINCT 
+     area_id
+    ,area_code 
+    ,CURRENT_DATE as updated_at
+    ,CURRENT_DATE as created_at
+    ,SESSION_USER() as updated_by
+    ,SESSION_USER() as created_by
+FROM(
+    select DISTINCT 
+    CAST(ABS(FARM_FINGERPRINT(CAST(from_area_code as STRING))) AS INT) as area_id
+    ,from_area_code AS area_code
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+ UNION ALL 
+    select DISTINCT 
+    ABS(FARM_FINGERPRINT(CAST(to_area_code as STRING))) as area_id
+    ,to_area_code AS area_code  
+  FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+  
+ UNION ALL 
+    
+    SELECT -1,
+        'UNKWOWN'
+    
+)
+order by 1
+    );
+  
+[0m21:09:25.476807 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:04f00f54-06d1-44a5-9f6d-160dcf4778ca&page=queryresults
+[0m21:09:28.075813 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a947d90>]}
+[0m21:09:28.078347 [info ] [Thread-1 (]: 6 of 17 OK created sql table model pkg_mart.dim_area ........................... [[32mCREATE TABLE (9.0 rows, 62.7 KiB processed)[0m in 3.40s]
+[0m21:09:28.079469 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_area
+[0m21:09:28.080076 [debug] [Thread-1 (]: Began running node model.aritzia.dim_articles
+[0m21:09:28.080798 [info ] [Thread-1 (]: 7 of 17 START sql table model pkg_mart.dim_articles ............................ [RUN]
+[0m21:09:28.081472 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_area, now model.aritzia.dim_articles)
+[0m21:09:28.081931 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_articles
+[0m21:09:28.088032 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_articles"
+[0m21:09:28.089258 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_articles
+[0m21:09:28.094738 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:28.328938 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_articles"
+[0m21:09:28.332709 [debug] [Thread-1 (]: On model.aritzia.dim_articles: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_articles"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_articles`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with combined_articles as (
+    SELECT DISTINCT
+        COALESCE(material,-1) as material_id
+        ,COALESCE(department,derived_department) as article_department
+        ,packing_time as estimated_packing_time
+    from  `aritzia-440802`.`pkg_mart`.`stg_articles` a
+    LEFT JOIN `aritzia-440802`.`pkg_mart`.`stg_packing_time_standards` pts
+        ON a.department = pts.derived_department
+    UNION ALL
+    SELECT DISTINCT 
+        CAST(article as INT) as material_id
+       ,'UNKNOWN' as article_department
+       ,NULL as estimated_packing_time
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+    LEFT JOIN `aritzia-440802`.`pkg_mart`.`stg_articles` a
+        on st.article = CAST(a.material  AS INT)
+    WHERE article IS NOT NULL
+    and a.material IS NULL --to get only distinct articles
+)
+
+SELECT DISTINCT 
+        CAST(COALESCE(ABS(FARM_FINGERPRINT(CAST(material_id as STRING))),-1) AS INT) AS article_id
+        ,material_id
+        ,article_department
+        ,estimated_packing_time
+        ,CURRENT_DATE as updated_at
+        ,CURRENT_DATE as created_at
+        ,SESSION_USER() as updated_by
+        ,SESSION_USER() as created_by
+from combined_articles
+ORDER BY 1,2
+    );
+  
+[0m21:09:28.860123 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:238384cd-8f52-49fe-b79b-02966af38305&page=queryresults
+[0m21:09:31.906472 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104530dc0>]}
+[0m21:09:31.907631 [info ] [Thread-1 (]: 7 of 17 OK created sql table model pkg_mart.dim_articles ....................... [[32mCREATE TABLE (1.8k rows, 35.2 KiB processed)[0m in 3.82s]
+[0m21:09:31.908403 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_articles
+[0m21:09:31.908905 [debug] [Thread-1 (]: Began running node model.aritzia.dim_order_category
+[0m21:09:31.909591 [info ] [Thread-1 (]: 8 of 17 START sql table model pkg_mart.dim_order_category ...................... [RUN]
+[0m21:09:31.910266 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_articles, now model.aritzia.dim_order_category)
+[0m21:09:31.910721 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_order_category
+[0m21:09:31.915334 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_order_category"
+[0m21:09:31.916479 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_order_category
+[0m21:09:31.919267 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:32.122549 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_order_category"
+[0m21:09:32.125558 [debug] [Thread-1 (]: On model.aritzia.dim_order_category: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_order_category"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_order_category`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+    order_category_id
+   ,order_category
+   ,CURRENT_DATE as updated_at
+   ,CURRENT_DATE as created_at
+   ,SESSION_USER() as updated_by
+   ,SESSION_USER() as created_by
+FROM (
+    SELECT DISTINCT
+        CAST(ABS(FARM_FINGERPRINT(CAST(order_category as STRING))) AS INT) as order_category_id
+        ,order_category
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+ UNION ALL 
+    
+    SELECT -1
+           ,'UNKWOWN'
+    )
+ORDER BY 1
+    );
+  
+[0m21:09:32.542662 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:6b7e3694-8758-4295-8413-02580ea95a0b&page=queryresults
+[0m21:09:35.573455 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa81660>]}
+[0m21:09:35.574520 [info ] [Thread-1 (]: 8 of 17 OK created sql table model pkg_mart.dim_order_category ................. [[32mCREATE TABLE (9.0 rows, 54.5 KiB processed)[0m in 3.66s]
+[0m21:09:35.575243 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_order_category
+[0m21:09:35.575716 [debug] [Thread-1 (]: Began running node model.aritzia.dim_order_channel
+[0m21:09:35.576385 [info ] [Thread-1 (]: 9 of 17 START sql table model pkg_mart.dim_order_channel ....................... [RUN]
+[0m21:09:35.577014 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_order_category, now model.aritzia.dim_order_channel)
+[0m21:09:35.577469 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_order_channel
+[0m21:09:35.581991 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_order_channel"
+[0m21:09:35.583023 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_order_channel
+[0m21:09:35.585876 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:35.922809 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_order_channel"
+[0m21:09:35.926474 [debug] [Thread-1 (]: On model.aritzia.dim_order_channel: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_order_channel"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_order_channel`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+    order_channel_id
+   ,order_channel
+   ,CURRENT_DATE as updated_at
+   ,CURRENT_DATE as created_at
+   ,SESSION_USER() as updated_by
+   ,SESSION_USER() as created_by
+FROM (
+    SELECT DISTINCT
+        CAST(ABS(FARM_FINGERPRINT(CAST(order_channel as STRING))) AS INT) as order_channel_id
+        ,order_channel
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+ UNION ALL 
+    
+    SELECT -1
+           ,'UNKWOWN'
+    )
+ORDER BY 1
+    );
+  
+[0m21:09:36.330215 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:74cfd18d-711d-45c3-b401-49cd0a6ab5df&page=queryresults
+[0m21:09:38.601936 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa81660>]}
+[0m21:09:38.602487 [info ] [Thread-1 (]: 9 of 17 OK created sql table model pkg_mart.dim_order_channel .................. [[32mCREATE TABLE (3.0 rows, 33.9 KiB processed)[0m in 3.02s]
+[0m21:09:38.602912 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_order_channel
+[0m21:09:38.603181 [debug] [Thread-1 (]: Began running node model.aritzia.dim_order_type
+[0m21:09:38.603557 [info ] [Thread-1 (]: 10 of 17 START sql table model pkg_mart.dim_order_type ......................... [RUN]
+[0m21:09:38.604094 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_order_channel, now model.aritzia.dim_order_type)
+[0m21:09:38.604354 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_order_type
+[0m21:09:38.606721 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_order_type"
+[0m21:09:38.607405 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_order_type
+[0m21:09:38.611006 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:39.094697 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_order_type"
+[0m21:09:39.095915 [debug] [Thread-1 (]: On model.aritzia.dim_order_type: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_order_type"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_order_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT 
+   order_type_id
+  ,order_type
+  ,order_type_category
+  ,CURRENT_DATE as updated_at
+  ,CURRENT_DATE as created_at
+  ,SESSION_USER() as updated_by
+  ,SESSION_USER() as created_by
+FROM(
+SELECT DISTINCT
+   CAST(ABS(FARM_FINGERPRINT(CONCAT(CAST(order_type as STRING),CAST(order_type_category as STRING) ))) AS INT) as order_type_id
+  ,order_type
+  ,order_type_category
+ -- ,order_category
+ FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+ UNION ALL 
+    
+    SELECT -1
+        ,'UNKNOWN'
+        ,'UNKNOWN'
+    )
+ORDER BY 1
+    );
+  
+[0m21:09:39.504624 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:a0f86f15-198c-4a8c-8b40-85fe5af852f3&page=queryresults
+[0m21:09:41.702439 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad66080>]}
+[0m21:09:41.703513 [info ] [Thread-1 (]: 10 of 17 OK created sql table model pkg_mart.dim_order_type .................... [[32mCREATE TABLE (19.0 rows, 48.2 KiB processed)[0m in 3.10s]
+[0m21:09:41.704235 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_order_type
+[0m21:09:41.704716 [debug] [Thread-1 (]: Began running node model.aritzia.dim_orders
+[0m21:09:41.705349 [info ] [Thread-1 (]: 11 of 17 START sql table model pkg_mart.dim_orders ............................. [RUN]
+[0m21:09:41.705988 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_order_type, now model.aritzia.dim_orders)
+[0m21:09:41.706341 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_orders
+[0m21:09:41.710488 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_orders"
+[0m21:09:41.711381 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_orders
+[0m21:09:41.714397 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_orders"
+[0m21:09:41.715262 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:41.715695 [debug] [Thread-1 (]: On model.aritzia.dim_orders: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_orders"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT DISTINCT
+   ABS(FARM_FINGERPRINT(CAST(order_number as STRING))) as order_key
+  ,order_number
+  ,CURRENT_DATE as updated_at
+  ,CURRENT_DATE as created_at
+  ,SESSION_USER() as updated_by
+  ,SESSION_USER() as created_by
+ FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+    );
+  
+[0m21:09:42.065463 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:105c36c9-83b4-49a7-bb61-fda550841277&page=queryresults
+[0m21:09:44.341121 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab48880>]}
+[0m21:09:44.342232 [info ] [Thread-1 (]: 11 of 17 OK created sql table model pkg_mart.dim_orders ........................ [[32mCREATE TABLE (597.0 rows, 29.3 KiB processed)[0m in 2.63s]
+[0m21:09:44.343017 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_orders
+[0m21:09:44.343530 [debug] [Thread-1 (]: Began running node model.aritzia.dim_storage
+[0m21:09:44.344208 [info ] [Thread-1 (]: 12 of 17 START sql table model pkg_mart.dim_storage ............................ [RUN]
+[0m21:09:44.345115 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_orders, now model.aritzia.dim_storage)
+[0m21:09:44.345591 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_storage
+[0m21:09:44.350518 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_storage"
+[0m21:09:44.351598 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_storage
+[0m21:09:44.354460 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:44.557739 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_storage"
+[0m21:09:44.558770 [debug] [Thread-1 (]: On model.aritzia.dim_storage: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_storage"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_storage`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT DISTINCT 
+     storage_location_id
+    ,storage_location 
+    ,CURRENT_DATE as updated_at
+    ,CURRENT_DATE as created_at
+    ,SESSION_USER() as updated_by
+    ,SESSION_USER() as created_by
+FROM(
+    select DISTINCT 
+    CAST(ABS(FARM_FINGERPRINT(CAST(from_storage_location as STRING))) as INT) as storage_location_id
+    ,from_storage_location as storage_location
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+ UNION ALL 
+    select DISTINCT 
+     CAST(ABS(FARM_FINGERPRINT(CAST(to_storage_location as STRING))) AS INT) as storage_location_id
+    ,to_storage_location storage_location  
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+UNION ALL 
+    SELECT -1,
+        'UNKWOWN'
+)
+    );
+  
+[0m21:09:45.038323 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:55efd9da-60c8-4e0f-8995-6102cf976979&page=queryresults
+[0m21:09:47.574783 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab48880>]}
+[0m21:09:47.577283 [info ] [Thread-1 (]: 12 of 17 OK created sql table model pkg_mart.dim_storage ....................... [[32mCREATE TABLE (1.5k rows, 67.6 KiB processed)[0m in 3.23s]
+[0m21:09:47.578215 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_storage
+[0m21:09:47.578530 [debug] [Thread-1 (]: Began running node model.aritzia.dim_users
+[0m21:09:47.578894 [info ] [Thread-1 (]: 13 of 17 START sql table model pkg_mart.dim_users .............................. [RUN]
+[0m21:09:47.579295 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_storage, now model.aritzia.dim_users)
+[0m21:09:47.579528 [debug] [Thread-1 (]: Began compiling node model.aritzia.dim_users
+[0m21:09:47.583812 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.dim_users"
+[0m21:09:47.584456 [debug] [Thread-1 (]: Began executing node model.aritzia.dim_users
+[0m21:09:47.586223 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:47.835720 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.dim_users"
+[0m21:09:47.837939 [debug] [Thread-1 (]: On model.aritzia.dim_users: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.dim_users"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`dim_users`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT 
+     user_id
+    ,CURRENT_DATE as updated_at
+    ,CURRENT_DATE as created_at
+    ,SESSION_USER() as updated_by
+    ,SESSION_USER() as created_by
+ FROM (
+    SELECT DISTINCT
+        user_id
+    FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+
+    UNION ALL
+
+    SELECT '-1' as user_id
+) ORDER BY 1
+    );
+  
+[0m21:09:48.206171 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:72475009-7481-4595-b0bc-f153a62de7dc&page=queryresults
+[0m21:09:50.313979 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103564af0>]}
+[0m21:09:50.314489 [info ] [Thread-1 (]: 13 of 17 OK created sql table model pkg_mart.dim_users ......................... [[32mCREATE TABLE (30.0 rows, 27.5 KiB processed)[0m in 2.73s]
+[0m21:09:50.314867 [debug] [Thread-1 (]: Finished running node model.aritzia.dim_users
+[0m21:09:50.315118 [debug] [Thread-1 (]: Began running node model.aritzia.bridge_order_type_order_category
+[0m21:09:50.315499 [info ] [Thread-1 (]: 14 of 17 START sql table model pkg_mart.bridge_order_type_order_category ....... [RUN]
+[0m21:09:50.315895 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.dim_users, now model.aritzia.bridge_order_type_order_category)
+[0m21:09:50.316172 [debug] [Thread-1 (]: Began compiling node model.aritzia.bridge_order_type_order_category
+[0m21:09:50.318917 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.bridge_order_type_order_category"
+[0m21:09:50.319510 [debug] [Thread-1 (]: Began executing node model.aritzia.bridge_order_type_order_category
+[0m21:09:50.321221 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:50.514979 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.bridge_order_type_order_category"
+[0m21:09:50.516711 [debug] [Thread-1 (]: On model.aritzia.bridge_order_type_order_category: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.bridge_order_type_order_category"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`bridge_order_type_order_category`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT 
+     ot.order_type_id
+    ,oc.order_category_id
+FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+INNER JOIN  `aritzia-440802`.`pkg_mart`.`dim_order_type`  ot
+    on st.order_type = ot.order_type
+INNER JOIN  `aritzia-440802`.`pkg_mart`.`dim_order_category`  oc
+    on st.order_category = oc.order_category
+order by 1,2
+    );
+  
+[0m21:09:50.857074 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:a1724e72-ce2c-4698-a503-f558ebc8bfcb&page=queryresults
+[0m21:09:53.574794 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103564af0>]}
+[0m21:09:53.577131 [info ] [Thread-1 (]: 14 of 17 OK created sql table model pkg_mart.bridge_order_type_order_category .. [[32mCREATE TABLE (3.7k rows, 71.2 KiB processed)[0m in 3.26s]
+[0m21:09:53.578537 [debug] [Thread-1 (]: Finished running node model.aritzia.bridge_order_type_order_category
+[0m21:09:53.579448 [debug] [Thread-1 (]: Began running node model.aritzia.fact_transactions
+[0m21:09:53.580518 [info ] [Thread-1 (]: 15 of 17 START sql incremental model pkg_mart.fact_transactions ................ [RUN]
+[0m21:09:53.581384 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aritzia.bridge_order_type_order_category, now model.aritzia.fact_transactions)
+[0m21:09:53.582028 [debug] [Thread-1 (]: Began compiling node model.aritzia.fact_transactions
+[0m21:09:53.597484 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.fact_transactions"
+[0m21:09:53.599069 [debug] [Thread-1 (]: Began executing node model.aritzia.fact_transactions
+[0m21:09:53.629667 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:09:53.896182 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.fact_transactions"
+[0m21:09:53.897081 [debug] [Thread-1 (]: On model.aritzia.fact_transactions: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.fact_transactions"} */
+-- back compat for old kwarg name
+  
+  
+        
+    
+
+    
+
+    merge into `aritzia-440802`.`pkg_mart`.`fact_transactions` as DBT_INTERNAL_DEST
+        using (
+
+SELECT 
+   transaction_id
+  ,warehouse_id
+  ,st.transaction_date
+  ,transaction_timestamp
+  ,transaction_hour
+  ,ot.order_type_id
+  ,och.order_channel_id
+  ,du.user_id
+  ,dac.action_code_id
+  ,da.article_id
+  ,order_number
+  ,order_line_item
+  ,quantity
+  ,inventory_detail_number
+  ,ar.area_id as from_area_id
+  ,str.storage_location_id as from_storage_location_id
+  ,ar2.area_id as to_area_id
+  ,str2.storage_location_id as to_storage_location_id
+  ,CURRENT_DATE as updated_at
+  ,CURRENT_DATE as created_at
+  ,SESSION_USER() as updated_by
+  ,SESSION_USER() as created_by
+FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_date`  d 
+  ON st.transaction_date = CAST(d.full_date as DATE)
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_order_type`  ot
+  ON COALESCE(st.order_type,'UNKNOWN') = ot.order_type
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_order_channel`  och
+  ON COALESCE(st.order_channel,'UNKNOWN') = och.order_channel
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_users`  du 
+  ON COALESCE(st.user_id,'UNKNOWN') = du.user_id
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_action_code`  dac
+  ON st.action_code = dac.action_code
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_articles`  da
+  ON st.article = da.material_id and da.material_id <> -1
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_area`  ar
+  ON COALESCE(st.from_area_code,'UNKNOWN') = ar.area_code
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_storage`  str
+  ON COALESCE(st.from_storage_location,'UNKNOWN') = str.storage_location
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_area`  ar2
+  ON COALESCE(st.to_area_code,'UNKNOWN') = ar2.area_code
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_storage`  str2
+  ON COALESCE(st.to_storage_location,'UNKNOWN') = str2.storage_location
+
+
+    
+    where transaction_date > (select COALESCE(MAX(transaction_date), CAST('2000-01-01' as DATE)) from `aritzia-440802`.`pkg_mart`.`fact_transactions` 
+                            )
+
+
+        ) as DBT_INTERNAL_SOURCE
+        on (FALSE)
+
+    
+
+    when not matched then insert
+        (`transaction_id`, `warehouse_id`, `transaction_date`, `transaction_timestamp`, `transaction_hour`, `order_type_id`, `order_channel_id`, `user_id`, `action_code_id`, `article_id`, `order_number`, `order_line_item`, `quantity`, `inventory_detail_number`, `from_area_id`, `from_storage_location_id`, `to_area_id`, `to_storage_location_id`, `updated_at`, `created_at`, `updated_by`, `created_by`)
+    values
+        (`transaction_id`, `warehouse_id`, `transaction_date`, `transaction_timestamp`, `transaction_hour`, `order_type_id`, `order_channel_id`, `user_id`, `action_code_id`, `article_id`, `order_number`, `order_line_item`, `quantity`, `inventory_detail_number`, `from_area_id`, `from_storage_location_id`, `to_area_id`, `to_storage_location_id`, `updated_at`, `created_at`, `updated_by`, `created_by`)
+
+
+    
+[0m21:09:54.044525 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:5dc98b70-4ff7-47fe-874b-4df23b6cb151&page=queryresults
+[0m21:09:54.045821 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:5dc98b70-4ff7-47fe-874b-4df23b6cb151&page=queryresults
+[0m21:09:54.058553 [debug] [Thread-1 (]: Database Error in model fact_transactions (models/mart/fact_transactions.sql)
+  Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+  compiled code at target/run/aritzia/models/mart/fact_transactions.sql
+[0m21:09:54.059665 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f23dc21-9c99-4185-bb4e-ac57b71fbbaf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac1eb00>]}
+[0m21:09:54.060720 [error] [Thread-1 (]: 15 of 17 ERROR creating sql incremental model pkg_mart.fact_transactions ....... [[31mERROR[0m in 0.48s]
+[0m21:09:54.061577 [debug] [Thread-1 (]: Finished running node model.aritzia.fact_transactions
+[0m21:09:54.062658 [debug] [Thread-4 (]: Marking all children of 'model.aritzia.fact_transactions' to be skipped because of status 'error'.  Reason: Database Error in model fact_transactions (models/mart/fact_transactions.sql)
+  Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+  compiled code at target/run/aritzia/models/mart/fact_transactions.sql.
+[0m21:09:54.064229 [debug] [Thread-1 (]: Began running node model.aritzia.fact_transaction_packing_efficiency
+[0m21:09:54.064616 [info ] [Thread-1 (]: 16 of 17 SKIP relation pkg_mart.fact_transaction_packing_efficiency ............ [[33mSKIP[0m]
+[0m21:09:54.064925 [debug] [Thread-1 (]: Finished running node model.aritzia.fact_transaction_packing_efficiency
+[0m21:09:54.065356 [debug] [Thread-1 (]: Began running node model.aritzia.fact_user_packing_efficiency
+[0m21:09:54.065652 [info ] [Thread-1 (]: 17 of 17 SKIP relation pkg_mart.fact_user_packing_efficiency ................... [[33mSKIP[0m]
+[0m21:09:54.065998 [debug] [Thread-1 (]: Finished running node model.aritzia.fact_user_packing_efficiency
+[0m21:09:54.066805 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:09:54.067068 [debug] [MainThread]: Connection 'model.aritzia.fact_transactions' was properly closed.
+[0m21:09:54.067391 [info ] [MainThread]: 
+[0m21:09:54.067626 [info ] [MainThread]: Finished running 1 incremental model, 14 table models, 2 view models in 0 hours 0 minutes and 40.80 seconds (40.80s).
+[0m21:09:54.069254 [debug] [MainThread]: Command end result
+[0m21:09:54.097967 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/richie/Documents/DBT/dbt_core/target/manifest.json
+[0m21:09:54.099710 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/richie/Documents/DBT/dbt_core/target/semantic_manifest.json
+[0m21:09:54.105941 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/richie/Documents/DBT/dbt_core/target/run_results.json
+[0m21:09:54.106263 [info ] [MainThread]: 
+[0m21:09:54.106554 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successs, and 0 warnings:[0m
+[0m21:09:54.106771 [info ] [MainThread]: 
+[0m21:09:54.107037 [error] [MainThread]:   Database Error in model fact_transactions (models/mart/fact_transactions.sql)
+  Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+  compiled code at target/run/aritzia/models/mart/fact_transactions.sql
+[0m21:09:54.107256 [info ] [MainThread]: 
+[0m21:09:54.107475 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=1 SKIP=2 TOTAL=17
+[0m21:09:54.109790 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 42.855476, "process_user_time": 3.294872, "process_kernel_time": 0.359596, "process_mem_max_rss": "206307328", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:09:54.110232 [debug] [MainThread]: Command `dbt run` failed at 21:09:54.110169 after 42.86 seconds
+[0m21:09:54.110511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037115a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103294d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aab39a0>]}
+[0m21:09:54.110762 [debug] [MainThread]: Flushing usage events
+[0m21:09:54.298460 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:10:19.680386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051bd660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b68790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b68b20>]}
+
+
+============================== 21:10:19.683721 | 6a5d8d8f-e72c-4a6b-904a-66030bbb735c ==============================
+[0m21:10:19.683721 [info ] [MainThread]: Running with dbt=1.9.0-b4
+[0m21:10:19.684185 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/richie/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/richie/Documents/DBT/dbt_core/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --full-refresh -s fact_transactions.sql', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:10:20.438839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dc61de0>]}
+[0m21:10:20.475339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dc289d0>]}
+[0m21:10:20.476046 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m21:10:20.494956 [debug] [MainThread]: checksum: 0d3acddb5afbce98f9888b13248063cae3d09e6e329263e3ffe4b2a6aa072c8d, vars: {}, profile: , target: , version: 1.9.0b4
+[0m21:10:20.623086 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:10:20.623471 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:10:20.667611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e926980>]}
+[0m21:10:20.746211 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/richie/Documents/DBT/dbt_core/target/manifest.json
+[0m21:10:20.748767 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/richie/Documents/DBT/dbt_core/target/semantic_manifest.json
+[0m21:10:20.762841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8ddf60>]}
+[0m21:10:20.763223 [info ] [MainThread]: Found 17 models, 1 seed, 11 data tests, 3 sources, 484 macros
+[0m21:10:20.763460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8ddbd0>]}
+[0m21:10:20.764765 [info ] [MainThread]: 
+[0m21:10:20.765000 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:10:20.765178 [info ] [MainThread]: 
+[0m21:10:20.765495 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:10:20.766048 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aritzia-440802'
+[0m21:10:20.766295 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:21.098293 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aritzia-440802, now list_aritzia-440802_pkg_mart)
+[0m21:10:21.098929 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:10:21.318833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b44460>]}
+[0m21:10:21.321137 [debug] [Thread-1 (]: Began running node model.aritzia.fact_transactions
+[0m21:10:21.321613 [info ] [Thread-1 (]: 1 of 1 START sql incremental model pkg_mart.fact_transactions .................. [RUN]
+[0m21:10:21.322154 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aritzia-440802_pkg_mart, now model.aritzia.fact_transactions)
+[0m21:10:21.322884 [debug] [Thread-1 (]: Began compiling node model.aritzia.fact_transactions
+[0m21:10:21.340269 [debug] [Thread-1 (]: Writing injected SQL for node "model.aritzia.fact_transactions"
+[0m21:10:21.341073 [debug] [Thread-1 (]: Began executing node model.aritzia.fact_transactions
+[0m21:10:21.367022 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:10:21.615843 [debug] [Thread-1 (]: Writing runtime sql for node "model.aritzia.fact_transactions"
+[0m21:10:21.616704 [debug] [Thread-1 (]: On model.aritzia.fact_transactions: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "dbt_core", "target_name": "dev", "node_id": "model.aritzia.fact_transactions"} */
+
+  
+    
+
+    create or replace table `aritzia-440802`.`pkg_mart`.`fact_transactions`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT 
+   transaction_id
+  ,warehouse_id
+  ,st.transaction_date
+  ,transaction_timestamp
+  ,transaction_hour
+  ,ot.order_type_id
+  ,och.order_channel_id
+  ,du.user_id
+  ,dac.action_code_id
+  ,da.article_id
+  ,order_number
+  ,order_line_item
+  ,quantity
+  ,inventory_detail_number
+  ,ar.area_id as from_area_id
+  ,str.storage_location_id as from_storage_location_id
+  ,ar2.area_id as to_area_id
+  ,str2.storage_location_id as to_storage_location_id
+  ,CURRENT_DATE as updated_at
+  ,CURRENT_DATE as created_at
+  ,SESSION_USER() as updated_by
+  ,SESSION_USER() as created_by
+FROM `aritzia-440802`.`pkg_mart`.`stg_transactions`  st
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_date`  d 
+  ON st.transaction_date = CAST(d.full_date as DATE)
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_order_type`  ot
+  ON COALESCE(st.order_type,'UNKNOWN') = ot.order_type
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_order_channel`  och
+  ON COALESCE(st.order_channel,'UNKNOWN') = och.order_channel
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_users`  du 
+  ON COALESCE(st.user_id,'UNKNOWN') = du.user_id
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_action_code`  dac
+  ON st.action_code = dac.action_code
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_articles`  da
+  ON st.article = da.material_id and da.material_id <> -1
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_area`  ar
+  ON COALESCE(st.from_area_code,'UNKNOWN') = ar.area_code
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_storage`  str
+  ON COALESCE(st.from_storage_location,'UNKNOWN') = str.storage_location
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_area`  ar2
+  ON COALESCE(st.to_area_code,'UNKNOWN') = ar2.area_code
+LEFT JOIN `aritzia-440802`.`pkg_mart`.`dim_storage`  str2
+  ON COALESCE(st.to_storage_location,'UNKNOWN') = str2.storage_location
+
+
+    );
+  
+[0m21:10:22.101766 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aritzia-440802&j=bq:US:4c06ee09-e9d9-42e0-8abe-b74dc7df1582&page=queryresults
+[0m21:10:25.010396 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5d8d8f-e72c-4a6b-904a-66030bbb735c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042f8520>]}
+[0m21:10:25.011519 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model pkg_mart.fact_transactions ............. [[32mCREATE TABLE (3.7k rows, 628.6 KiB processed)[0m in 3.69s]
+[0m21:10:25.012288 [debug] [Thread-1 (]: Finished running node model.aritzia.fact_transactions
+[0m21:10:25.013668 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:10:25.014043 [debug] [MainThread]: Connection 'model.aritzia.fact_transactions' was properly closed.
+[0m21:10:25.014387 [info ] [MainThread]: 
+[0m21:10:25.014731 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 4.25 seconds (4.25s).
+[0m21:10:25.015442 [debug] [MainThread]: Command end result
+[0m21:10:25.043289 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/richie/Documents/DBT/dbt_core/target/manifest.json
+[0m21:10:25.044799 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/richie/Documents/DBT/dbt_core/target/semantic_manifest.json
+[0m21:10:25.049182 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/richie/Documents/DBT/dbt_core/target/run_results.json
+[0m21:10:25.049423 [info ] [MainThread]: 
+[0m21:10:25.049710 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:10:25.049905 [info ] [MainThread]: 
+[0m21:10:25.050111 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m21:10:25.052259 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.4225526, "process_user_time": 1.741737, "process_kernel_time": 0.277986, "process_mem_max_rss": "199147520", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:10:25.052690 [debug] [MainThread]: Command `dbt run` succeeded at 21:10:25.052633 after 5.42 seconds
+[0m21:10:25.052955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051bd660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dd0ec20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8da230>]}
+[0m21:10:25.053200 [debug] [MainThread]: Flushing usage events
+[0m21:10:25.166344 [debug] [MainThread]: An error was encountered while trying to flush usage events

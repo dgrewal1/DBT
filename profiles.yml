@@ -1,12 +1,26 @@
-# Note that only one of these targets is required
-
-default:
-  target: dev
+dbt_core:
   outputs:
     dev:
-      type: bigquery
+      dataset: pkg_mart
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
       method: oauth
-      project: "aritzia-440802"
-      dataset: "pkg" # You can also use "schema" here
-      threads: 4 # Must be a value of 1 or greater 
-     
+      priority: interactive
+      project: aritzia-440802
+      threads: 1
+      type: bigquery
+  target: dev
+default:
+  outputs:
+    dev:
+      dataset: pkg_mart
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: aritzia-440802
+      threads: 1
+      type: bigquery
+  target: dev

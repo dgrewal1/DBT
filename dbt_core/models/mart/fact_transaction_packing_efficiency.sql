@@ -44,7 +44,7 @@ SELECT   transaction_id,
         ,row_number() OVER(PARTITION BY user_id,order_number ORDER BY transaction_timestamp,order_line_item) as rn
         ,quantity
 FROM pkoclose_transactions
---WHERE USER_ID= 'USER13' OR USER_ID= 'USER28' OR USER_ID= 'USER27'
+--WHERE USER_ID= 'USER13'
 ORDER BY transaction_timestamp,1
 )
 --SELECT * FROM packing_start_time_ order by 7,4

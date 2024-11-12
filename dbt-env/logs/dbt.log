@@ -1,0 +1,270 @@
+[0m19:42:04.651131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10469a6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107403190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074034f0>]}
+
+
+============================== 19:42:04.654662 | a8a2cfe9-2b1f-45f6-bf77-4a548952062c ==============================
+[0m19:42:04.654662 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:42:04.655033 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:42:04.657179 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 12
+    ------------------------------
+    9  |       project: aritzia-440802
+    10 |       dataset: pkg # You can also use "schema" here
+    11 |       threads: 4 # Must be a value of 1 or greater 
+    12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 7, column 7
+    did not find expected key
+      in "<unicode string>", line 12, column 24
+  
+[0m19:42:04.658140 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.02272175, "process_user_time": 0.71587, "process_kernel_time": 0.081875, "process_mem_max_rss": "96174080", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:42:04.658515 [debug] [MainThread]: Command `dbt run` failed at 19:42:04.658449 after 0.02 seconds
+[0m19:42:04.658740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10469a6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107402d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074039a0>]}
+[0m19:42:04.658956 [debug] [MainThread]: Flushing usage events
+[0m19:43:22.697224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f4a7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dc7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dc75b0>]}
+
+
+============================== 19:43:22.700826 | 1b9ce422-05fd-4cbe-81cc-5dd8d7a43acc ==============================
+[0m19:43:22.700826 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:43:22.701194 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:43:22.703483 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 12
+    ------------------------------
+    9  |       project: aritzia-440802
+    10 |       dataset: pkg # You can also use "schema" here
+    11 |       threads: 4 # Must be a value of 1 or greater 
+    12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 7, column 7
+    did not find expected key
+      in "<unicode string>", line 12, column 24
+  
+[0m19:43:22.704527 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.020638375, "process_user_time": 0.717416, "process_kernel_time": 0.083153, "process_mem_max_rss": "95993856", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:43:22.704895 [debug] [MainThread]: Command `dbt run` failed at 19:43:22.704830 after 0.02 seconds
+[0m19:43:22.705119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f4a7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dc7880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dc6e00>]}
+[0m19:43:22.705341 [debug] [MainThread]: Flushing usage events
+[0m19:43:42.500406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10494a7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107603280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076035e0>]}
+
+
+============================== 19:43:42.504360 | fca020d8-082e-406e-99b8-827d1d2ce1db ==============================
+[0m19:43:42.504360 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:43:42.504730 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:43:42.506760 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 12
+    ------------------------------
+    9  |       project: aritzia-440802
+    10 |       dataset: pkg # You can also use "schema" here
+    11 |       threads: 4 # Must be a value of 1 or greater 
+    12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+    
+    Raw Error:
+    ------------------------------
+    while parsing a block mapping
+      in "<unicode string>", line 7, column 7
+    did not find expected key
+      in "<unicode string>", line 12, column 24
+  
+[0m19:43:42.508575 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.023459418, "process_user_time": 0.700197, "process_kernel_time": 0.104064, "process_mem_max_rss": "93880320", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:43:42.509012 [debug] [MainThread]: Command `dbt run` failed at 19:43:42.508932 after 0.02 seconds
+[0m19:43:42.509263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10494a7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076038b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107602e30>]}
+[0m19:43:42.509525 [debug] [MainThread]: Flushing usage events
+[0m19:44:40.753551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106922710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10825aef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10825b250>]}
+
+
+============================== 19:44:40.757681 | f0136237-b490-4196-a0f0-6dd82e464521 ==============================
+[0m19:44:40.757681 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:44:40.758144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:44:40.769295 [info ] [MainThread]: dbt version: 1.8.7
+[0m19:44:40.769641 [info ] [MainThread]: python version: 3.10.0
+[0m19:44:40.769837 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+[0m19:44:40.770019 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m19:44:40.770494 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 12
+  ------------------------------
+  9  |       project: aritzia-440802
+  10 |       dataset: pkg # You can also use "schema" here
+  11 |       threads: 4 # Must be a value of 1 or greater 
+  12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 7, column 7
+  did not find expected key
+    in "<unicode string>", line 12, column 24
+[0m19:44:40.771583 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.032071166, "process_user_time": 0.718457, "process_kernel_time": 0.086568, "process_mem_max_rss": "95617024", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:44:40.771988 [debug] [MainThread]: Command `dbt debug` failed at 19:44:40.771925 after 0.03 seconds
+[0m19:44:40.772210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106922710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082ff9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082ffaf0>]}
+[0m19:44:40.772440 [debug] [MainThread]: Flushing usage events
+[0m19:44:44.796111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10499a770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107702f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107703280>]}
+
+
+============================== 19:44:44.799760 | 1bd29695-1402-4a8f-8d7c-a842b50fbbce ==============================
+[0m19:44:44.799760 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:44:44.800133 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:44:44.805370 [info ] [MainThread]: dbt version: 1.8.7
+[0m19:44:44.805600 [info ] [MainThread]: python version: 3.10.0
+[0m19:44:44.805825 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+[0m19:44:44.806001 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m19:44:44.806423 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 12
+  ------------------------------
+  9  |       project: aritzia-440802
+  10 |       dataset: pkg # You can also use "schema" here
+  11 |       threads: 4 # Must be a value of 1 or greater 
+  12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 7, column 7
+  did not find expected key
+    in "<unicode string>", line 12, column 24
+[0m19:44:44.807360 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.024620917, "process_user_time": 0.706093, "process_kernel_time": 0.079089, "process_mem_max_rss": "95354880", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:44:44.807727 [debug] [MainThread]: Command `dbt debug` failed at 19:44:44.807665 after 0.03 seconds
+[0m19:44:44.807947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10499a770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10796b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10796bb20>]}
+[0m19:44:44.808161 [debug] [MainThread]: Flushing usage events
+[0m19:44:47.914921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10251e740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e56f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e57280>]}
+
+
+============================== 19:44:47.918187 | 748ad81b-4d49-48bd-9ef2-03191c005a68 ==============================
+[0m19:44:47.918187 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:44:47.918557 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:44:47.925117 [info ] [MainThread]: Setting up your profile.
+[0m19:44:47.926160 [error] [MainThread]: Encountered an error:
+while parsing a block mapping
+  in "/Users/richie/Documents/DBT/dbt-env/profiles.yml", line 7, column 7
+expected <block end>, but found '<scalar>'
+  in "/Users/richie/Documents/DBT/dbt-env/profiles.yml", line 12, column 24
+[0m19:44:47.928749 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/init.py", line 321, in run
+    self.setup_profile(profile_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/init.py", line 249, in setup_profile
+    if not self.check_if_can_write_profile(profile_name=profile_name):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/init.py", line 210, in check_if_can_write_profile
+    profiles = yaml.safe_load(f) or {}
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "/Users/richie/Documents/DBT/dbt-env/profiles.yml", line 7, column 7
+expected <block end>, but found '<scalar>'
+  in "/Users/richie/Documents/DBT/dbt-env/profiles.yml", line 12, column 24
+
+[0m19:44:47.930076 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 0.0259165, "process_user_time": 0.699127, "process_kernel_time": 0.072297, "process_mem_max_rss": "93421568", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:44:47.930478 [debug] [MainThread]: Command `dbt init` failed at 19:44:47.930411 after 0.03 seconds
+[0m19:44:47.930733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10251e740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f40700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f40280>]}
+[0m19:44:47.930976 [debug] [MainThread]: Flushing usage events
+[0m19:45:30.526045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf2770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073c6f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073c72b0>]}
+
+
+============================== 19:45:30.529497 | df29d7fd-5a0a-4a91-9f0a-8bdfa8a66204 ==============================
+[0m19:45:30.529497 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:45:30.529886 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:45:30.535139 [info ] [MainThread]: dbt version: 1.8.7
+[0m19:45:30.535390 [info ] [MainThread]: python version: 3.10.0
+[0m19:45:30.535579 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+[0m19:45:30.535754 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m19:45:30.536242 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 12
+  ------------------------------
+  9  |       project: "aritzia-440802"
+  10 |       dataset: "pkg" # You can also use "schema" here
+  11 |       threads: 4 # Must be a value of 1 or greater 
+  12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 7, column 7
+  did not find expected key
+    in "<unicode string>", line 12, column 24
+[0m19:45:30.537279 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.022954209, "process_user_time": 0.703602, "process_kernel_time": 0.081571, "process_mem_max_rss": "95567872", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:45:30.537722 [debug] [MainThread]: Command `dbt debug` failed at 19:45:30.537650 after 0.02 seconds
+[0m19:45:30.537959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf2770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107467a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107467b50>]}
+[0m19:45:30.538189 [debug] [MainThread]: Flushing usage events
+[0m19:45:33.925657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103316710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c4eef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c4f250>]}
+
+
+============================== 19:45:33.929085 | 2c7d00a8-9069-46ae-b6e7-db94cf670474 ==============================
+[0m19:45:33.929085 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:45:33.929458 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/richie/Documents/DBT/dbt-env/logs', 'profiles_dir': '/Users/richie/Documents/DBT/dbt-env', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:45:33.934657 [info ] [MainThread]: dbt version: 1.8.7
+[0m19:45:33.934889 [info ] [MainThread]: python version: 3.10.0
+[0m19:45:33.935183 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+[0m19:45:33.935404 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m19:45:33.935873 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 12
+  ------------------------------
+  9  |       project: "aritzia-440802"
+  10 |       dataset: "pkg" # You can also use "schema" here
+  11 |       threads: 4 # Must be a value of 1 or greater 
+  12 |       [OPTIONAL_CONFIG](#optional-configurations): VALUE
+  
+  Raw Error:
+  ------------------------------
+  while parsing a block mapping
+    in "<unicode string>", line 7, column 7
+  did not find expected key
+    in "<unicode string>", line 12, column 24
+[0m19:45:33.936870 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.022526333, "process_user_time": 0.697609, "process_kernel_time": 0.07621, "process_mem_max_rss": "94257152", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:45:33.937254 [debug] [MainThread]: Command `dbt debug` failed at 19:45:33.937189 after 0.02 seconds
+[0m19:45:33.937499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103316710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf79a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf7af0>]}
+[0m19:45:33.937747 [debug] [MainThread]: Flushing usage events
